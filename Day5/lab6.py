@@ -1,14 +1,12 @@
 #Write a Python program to count the number of even and odd numbers from a series of numbers.
-a = input("Enter a series of number")
-b = len(a)
-c = b + 1
-even = 0
-odd = 0
-for i in range(1,c):
-    if i % 2 == 0:
-        even += 1
+num = [1,2,3,4,5,6,7]
+odd,even = 0,0
+for i in range(len(num)):
+    w = num[i]
+    if w%2 == 0:
+        odd = odd + 1
     else:
-        odd += 1
-print("The number of even digits are {} and number of odd digits are {}".format(even) .format(odd))
+        even = even + 1
+print(f"The Total Number of Even are {even} and odd are {odd} ")
 
 
